@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito Estava escrito errado de proposito... </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+        /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+ Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+        */
+       function descricaoDaTag () {
+           let paragrafo = document.getElementsByTagName("p")[1];
+           paragrafo.innerHTML = "Estar com estabilidade financeira, feliz! Trabalhando no que gosto!"
+       }
+       descricaoDaTag();
+        /*
+ Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+       */
+       function trocaDeCor () {
+           let quadradoAmarelo = document.getElementsByClassName("main-content")[0];
+           quadradoAmarelo.style.background = "green";
+       }
+       trocaDeCor()
+
+
+       /*
+ Crie uma função que mude a cor do quadrado vermelho para branco.
+      */
+       function mudarDeCor () {
+           let quadradoVermelhor = document.getElementsByClassName("center-content")[0];
+           quadradoVermelhor.style.background = "white";
+       }
+     
+     /*
+ Crie uma função que corrija o texto da tag <h1>.
+*/
+        function correcaoTitulo () {
+            let titulo = document.getElementsByTagName("h1")[0];
+            titulo.innerHTML = "Exercícios 5.1 - JavaScript";
+        }
+        correcaoTitulo()
+
+    /*
+ Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+
+    */
+        function modificarTextoParagrafo () {
+            let paragrafo2 = document.getElementsByTagName("p")[0];
+            paragrafo2.innerHTML = paragrafo2.innerHTML.toLowerCase();
+            paragrafo2.style.color = "gray"
+        }
+        modificarTextoParagrafo();
+    /*
+ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+       function mostrarParagrafos () {
+           let paragrafo3 = document.getElementsByTagName("p");
+           for (let i = 0; i < paragrafo3.length; i += 1) {
+               console.log(paragrafo3[i].innerHTML);
+           }
+       }
+       mostrarParagrafos()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+var titleh2 = document.getElementById("page-title");
+    titleh2.textContent = "Harry Potter"
+var subtitleh4 = document.getElementById("subtitle");
+    subtitleh4.style.color = "gray"
+    subtitleh4.textContent ="É meu filme favorito"
+var paragraph = document.getElementById("paragraph");
+    paragraph.style.color = "gray";
+    paragraph.textContent = "Esta série de filmes fez parte de minha infância e juventure, me cativou por vários tópicos, e creio que toda minha geração"
+var secondparagraph = document.getElementById("secondparagraph");
+    secondparagraph.textContent = "Eu adorei todos os filmes da série e estou aguardando por mais."
