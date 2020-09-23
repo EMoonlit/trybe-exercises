@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: antiquewhite;
+}
+.center-div {
+    width: 90%;
+    height: 90%;
+    background: gray;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+.top {
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    background: green;
+    padding: 15px;
+}
+.top h1 {
+    font-size: 2em;
+    color: white;
+}
+.columns {
+    text-align: center;
+    width: 50%;
+    border: 2px solid black;
+    
+    justify-content: column;
+    align-items: flex-end;
+}
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+    .center-div {
+        width: 100%;
+    }
+    .top {
+        background: greenyellow;
+    }
+    .top h1 {
+        color: black;
+    }
+
+}
